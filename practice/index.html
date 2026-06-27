@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="ayesha" onclick="change()"> Ayesha</p>
+
+    <button id="afzal" onclick="sayhello()"> Hello</button>
+    <script>
+        function sayhello(){
+            let ayesha = document.getElementById("ayesha");
+            ayesha.textContent+=" Afzal";
+            ayesha.style.color="Red";
+            ayesha.hidden="none";
+            let afzal = document.getElementById("afzal").disabled=true;
+        }
+
+        function change(){
+            let ayesha = document.getElementById("ayesha").textContent = "Afzal";
+        }
+
+        
+    </script>
+</body>
+</html>

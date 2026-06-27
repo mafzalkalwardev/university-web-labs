@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changer</title>
+</head>
+<body>
+
+  <h1>Color Changer App</h1>
+  <button onclick="changeBackground()">Change Background</button>
+
+  <script>
+    function changeBackground() {
+      const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>
